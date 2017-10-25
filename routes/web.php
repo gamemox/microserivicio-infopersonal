@@ -18,5 +18,5 @@ $router->get('/', function () use ($router) {
 $router->get('/infopersonal/{rut}', ['uses'=>'InfoPersonalController@getInfoPersonalAlu']);
 
 
-$router->get('/infopersonal/{rut}', ['uses'=>'InfoPersonalController@EditInfoPersonalAlu']);
+//$router->post('/infopersonal/{rut}', ['uses'=>'InfoPersonalController@EditInfoPersonalAlu']);
 
