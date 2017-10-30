@@ -10,15 +10,17 @@ use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 
 class InfoPersonal extends Model implements AuthenticatableContract, AuthorizableContract
 {
+    protected $table = "deudorfc";
+            
     use Authenticatable, Authorizable;
-
+    
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'apaterno', 'amaterno','nombress'
+        'apaterno', 'amaterno','nombress','knumerut'
     ];
 
     /**

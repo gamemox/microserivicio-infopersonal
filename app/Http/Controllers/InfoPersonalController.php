@@ -28,29 +28,30 @@ class InfoPersonalController extends Controller
     return  json_encode($results);   
   } 
   
-//  function getEditInfoPersonalAlu(Request $request,$rut){
+//  function getEditInfoPersonalAlu(Request $request){
 //    header("Access-Control-Allow-Origin: *");
 //    header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 //    header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Request-With');
 //    header('Access-Control-Allow-Credentials: true');              
-////    $this->validate($request, [
-////        'email'  => 'required',
-////        'password' => 'sometimes',
-////        'name'  => 'required',
-////        'address' => 'required',
-////        'phone'  => 'required'
-////    ]); 
 //
-//    $db = app('db');
-//    $results = $db->select("SELECT * from deudorfc WHERE D.KNUMERUT=".$rut);
+////    $db = app('db');
+////    $results = $db->select("");
+//    $findObjet=InfoPersonal::where('KNUMERUT','=',$request->input("rut"))->first();
+//    
+//    if($findObjet!=null){
+//        $findObjet->apaterno=$request->input('apaterno');
+//        $findObjet->save();
+//        return  json_encode("ok");
+//    }else{
+//        return  json_encode("no");
+//    }
 //    
 //    
-//    
-//    $user    = InfoPersonal::find($rut);
-//    $user->email   = $request->input('email');
-//    $user->name   = $request->input('name');
-//    $user->address   = $request->input('address');
-//    $user->phone   = $request->input('phone');
-//    $user->save();
+////    $user    = InfoPersonal::find($rut);
+////    $user->email   = $request->input('email');
+////    $user->name   = $request->input('name');
+////    $user->address   = $request->input('address');
+////    $user->phone   = $request->input('phone');
+////    $user->save();
 //  }
 }
